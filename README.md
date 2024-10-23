@@ -1,22 +1,26 @@
 # Melanoma-Cancer-Detection
 
-Abstract
-In cancer, there are over 200 different forms. Out of 200, melanoma is the deadliest form of skin cancer. The diagnostic procedure for melanoma starts with clinical screening, followed by dermoscopic analysis and histopathological examination. Melanoma skin cancer is highly curable if it gets identified at the early stages. The first step of Melanoma skin cancer diagnosis is to conduct a visual examination of the skin's affected area. Dermatologists take the dermatoscopic images of the skin lesions by the high-speed camera, which have an accuracy of 65-80% in the melanoma diagnosis without any additional technical support. With further visual examination by cancer treatment specialists and dermatoscopic images, the overall prediction rate of melanoma diagnosis raised to 75-84% accuracy. The project aims to build an automated classification system based on image processing techniques to classify skin cancer using skin lesions images.
+# Abstract
+Melanoma, the deadliest form of skin cancer, is one of over 200 types of cancer. The diagnostic process for melanoma typically begins with clinical screening, followed by dermoscopic analysis and histopathological examination. When detected early, melanoma is highly treatable. The initial step in diagnosis involves a visual examination of the affected skin area, during which dermatologists capture dermoscopic images using high-resolution cameras. These images alone provide a diagnostic accuracy of 65-80% for melanoma without further technical assistance. With additional visual evaluation by cancer specialists, the accuracy improves to 75-84%. This project aims to develop an automated classification system utilizing image processing techniques to classify skin cancer based on dermoscopic images of skin lesions.
 
-Problem Statement
+# Problem Statement
 In the skin biopsy, the dermatologist takes some part of the skin lesion and examines it under the microscope. The current process takes almost a week or more, starting from getting a dermatologist appointment to getting a biopsy report. The aims to shorten the current gap to just a couple of days by providing the predictive model. The approach uses Convolutional Neural Network (CNN) to classify nine types of skin cancer from outlier lesions images. This reduction of a gap has the opportunity to impact millions of people positively.
 
-Motivation
-The overarching goal is to support the efforts to reduce the death caused by skin cancer. The primary motivation that drives the project is to use the advanced image classification technology for the well-being of the people. Computer vision has made good progress in machine learning and deep learning that are scalable across domains.
+# Motivation
 
-Dataset
+The primary goal of this project is to contribute to reducing mortality caused by skin cancer through early and accurate diagnosis. The motivation behind this effort is to leverage advanced image classification technologies to improve public health outcomes. Significant progress in computer vision, driven by machine learning and deep learning, has demonstrated scalability across various domains, offering a promising avenue for enhancing skin cancer detection and ultimately improving patient well-being.
+
+# Dataset
+
 The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC). All images were sorted according to the classification taken with ISIC, and all subsets were divided into the same number of images.
 
 The data set contains the following diseases:
 
-datasetdf
+<img width="187" alt="image" src="https://github.com/user-attachments/assets/d6586fe4-66bb-4fe6-a407-22451d590b74">
 
-datasetplot
+
+
+
 
 To overcome the issue of class imbalance, used a python package Augmentor (https://augmentor.readthedocs.io/en/master/) to add more samples across all classes so that none of the classes have very few samples.
 
